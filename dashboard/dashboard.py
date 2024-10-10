@@ -12,7 +12,9 @@ st.sidebar.write('''
 ''')
 st.sidebar.caption("Copyright © Rizky Tri Pamungkas 2024")
 
-all_data = pd.read_csv(r'D:/python/all_data.csv')
+# Opendataset
+url = 'https://drive.google.com/uc?id=13XlDeo0vQUwbnPs2GPWGfPrnr5YGiNJT'
+all_data = pd.read_csv(url)
 
 # Set up Streamlit layout
 st.title('Dashboard: E-Commerce Public Data Analysis')
